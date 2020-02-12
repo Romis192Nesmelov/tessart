@@ -1,0 +1,109 @@
+.id {
+    width: 20px;
+}
+
+td.image {
+    width: 10%;
+}
+
+td.image img,
+.edit-image-preview img,
+.main-image img {
+    width: 100%;
+    border: 2px solid grey;
+}
+
+.edit-image-preview {
+    height: 580px;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.range-input {
+    width: 100%;
+}
+
+.range-input td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.range-input .min-max {
+    width: 70px;
+}
+
+.range-input .value {
+    width: 100px;
+    font-weight: bold;
+}
+
+.range-input .value input {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    float: left;
+}
+
+.range-input .value div {
+    padding-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+textarea {
+    width: 100%;
+    height: 800px;
+    resize: vertical;
+}
+
+.modal-body {
+    background-color: #f1f1f1;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #00a512;
+    border-color: #00a512;
+}
+
+.icon-big {
+    font-size: 28px;
+}
+
+.p-slider {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rs-container .rs-selected {
+    background-color: #00a512;
+    border-color: #43A047;
+}
+
+.p-slider.percents .rs-scale span:first-child ins:after,
+.p-slider.percents .rs-scale span:last-child ins:after,
+.p-slider.percents .rs-tooltip:after {
+    content: '%';
+}
+
+.btn-primary {
+    background-color: #00a512;
+    border-color: #43A047;
+}
+
+.map {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border: 3px solid #ff9100;
+}
+
+@media screen and (max-width: 768px)
+{
+    .edit-image-preview {
+        height: auto;
+    }
+}
