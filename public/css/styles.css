@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Trebuchet';
+    src: url('../fonts/Trebuchet MS.otf') format('opentype'), url('../fonts/Trebuchet.woff') format('woff'), url('../fonts/trebuc.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrebuchetBold';
+    src: url('../fonts/Trebuchet MS Bold.otf') format('opentype'), url('../fonts/Trebuchet Bold.woff') format('woff'), url('../fonts/trebucbd.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: #ececed;
+    font-family: Trebuchet, sans-serif, Arial, Verdana;
+}
+
+textarea
+{
+    min-height: 200px;
+    resize: none;
+}
+
+a:hover,
+a:focus,
+a:active
+{
+    color: #ffaa25;
+    text-decoration: underline;
+    border: 0;
+    outline: 0;
+    outline-offset: 0;
+}
+
+#loader-screen
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1051;
+    background: url("../images/white.png");
+    text-align: center;
+}
+
+#loader-screen > img
+{
+    width: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check-box-label
+{
+    margin-left: 5px;
+}
+
+.image > img
+{
+    width: 100%;
+}
+
+.slide
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide > .image-block
+{
+    float: left;
+    text-align: right;
+}
+
+.slide > .image-block > img
+{
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slide > .text-block
+{
+    height: 100%;
+    float: right;
+    padding: 120px 30px 0 30px;
+}
+
+.slide > .text-block > img
+{
+    width: 40%;
+    float: right;
+}
+
+.button
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10%;
+    transform: translateX(-50%);
+    background-color: #2f2f2f;
+    z-index: 999;
+}
+
+.button.bottom
+{
+    bottom: 0;
+    background-image: url(../images/arrow-down.png);
+}
+
+.button:hover
+{
+    background-color: #494949;
+    cursor: pointer;
+}
+
+#on_top_button {
+    color: #e18f00;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+#on_top_button:hover {
+    color: #e18f00;
+}
+
+#on_top_button .glyphicon {
+    font-size: 50px !important;
+}
+
+.btn-primary
+{
+    background-color: #ff9b00 !important;
+    border-color: #f37021 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary.focus
+{
+    background-color: #f37021 !important;
+    border-color: #ff9b00 !important;
+}
+
+.error
+{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.soc-icons-container
+{
+    width: 100%;
+    display: table;
+    padding: 10px 50px;
+    text-align: right;
+    border-top: 1px solid #b4b4b4;
+}
+
+.soc-icons-container > a > i
+{
+    font-size: 25px;
+    margin-right: 7px;
+    color: #2f2f2f;
+}
+
+.soc-icons-container > a > i:hover
+{
+    color: #e18f00;
+}
+
+.soc-icons-container > .copyright
+{
+    float: left;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .slide > div
+    {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .slide > .text-block
+    {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .slide
+    {
+        width: 100%;
+        display: table;
+    }
+
+    .slide > div
+    {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+
+    .slide > .text-block
+    {
+        padding: 20px;
+    }
+
+    .slide > .text-block > img
+    {
+        display: none;
+    }
+
+    .slide > .image-block > img
+    {
+        width: 100%;
+        transform: none;
+    }
+
+    h1, h2
+    {
+        text-align: center;
+    }
+
+    .button.bottom
+    {
+        display: none;
+    }
+
+    .soc-icons-container
+    {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-height: 650px)
+{
+    .slide > .text-block
+    {
+        padding-top: 50px;
+    }
+}
